@@ -1,0 +1,12 @@
+# Define the menu links for this module
+
+entity.faculty_reg_faculty.collection:
+  title: 'Faculty Entity: Faculty Listing'
+  route_name: entity.faculty_reg_faculty.collection
+  description: 'List faculty'
+  weight: 10
+faculty_reg_faculty.admin.structure.settings:
+  title: faculty Settings
+  description: 'Configure faculty entity'
+  route_name:  faculty_reg.faculty_settings
+  parent: system.admin_structure

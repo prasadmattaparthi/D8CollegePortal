@@ -1,0 +1,7 @@
+IMPORT_EXAMPLE.content:
+  path: '/import-example'
+  defaults:
+    _controller: '\Drupal\IMPORT_EXAMPLE\Controller\ImportPage::content'
+    _title: 'EXAMPLE Data Import'
+  requirements:
+    _permission: 'access administration pages'

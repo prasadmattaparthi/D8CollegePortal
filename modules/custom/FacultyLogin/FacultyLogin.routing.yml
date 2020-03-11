@@ -1,0 +1,9 @@
+FacultyLogin.form:
+ path: '/facultylogin'
+ defaults:
+   _title: 'Faculty Login form'
+   _form: '\Drupal\FacultyLogin\Form\FacultyLoginForm'
+ requirements:
+   _permission: 'access content'
+   _role: 'faculty_access'
+    

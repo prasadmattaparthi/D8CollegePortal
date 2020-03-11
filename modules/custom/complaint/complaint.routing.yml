@@ -1,0 +1,8 @@
+Complaint.form:
+ path: '/ComplaintForm'
+ defaults:
+   _title: 'Complaint Form'
+   _form: '\Drupal\complaint\Form\ComplaintForm'
+ requirements:
+   _permission: 'access content'
+    

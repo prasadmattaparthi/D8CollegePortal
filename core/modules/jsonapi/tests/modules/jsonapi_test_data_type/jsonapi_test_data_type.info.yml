@@ -1,0 +1,9 @@
+name: 'JSON API test format-agnostic @DataType normalizers'
+type: module
+package: Testing
+core: 8.x
+
+# Information added by Drupal.org packaging script on 2019-10-17
+version: '8.8.0-alpha1'
+project: 'drupal'
+datestamp: 1571355821

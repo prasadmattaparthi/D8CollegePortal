@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+student.settings_tab:
+  route_name: student_entity.student_settings
+  title: Settings
+  base_route: student_entity.student_settings
+
+student.view:
+  route_name: entity.student_entity_student.canonical
+  base_route: entity.student_entity_student.canonical
+  title: View
+
+student.page_edit:
+  route_name: entity.student_entity_student.edit_form
+  base_route: entity.student_entity_student.canonical
+  title: Edit
+
+student.delete_confirm:
+  route_name:  entity.student_entity_student.delete_form
+  base_route:  entity.student_entity_student.canonical
+  title: Delete
+  weight: 10

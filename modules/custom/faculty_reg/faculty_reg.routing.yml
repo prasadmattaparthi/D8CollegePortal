@@ -1,0 +1,53 @@
+entity.faculty_reg_faculty.canonical:
+  path: '/faculty_reg_faculty/{faculty_reg_faculty}'
+  defaults:
+    _entity_view: 'faculty_reg_faculty'
+    _title: 'FACULTY DETAILS'
+  requirements:
+    _entity_access: 'faculty_reg_faculty.view'
+
+entity.faculty_reg_faculty.collection:
+  path: '/faculty_reg_faculty/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'faculty_reg_faculty'
+    _title: 'FACULTY RECORDS'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'administer faculty entity'
+    
+faculty_reg.faculty_add:
+  path: '/faculty_reg_faculty/add'
+  defaults:
+  # Calls the form.add controller, defined in the student entity.
+    _entity_form: faculty_reg_faculty.add
+    _title: 'Registration Form'
+  requirements:
+    _entity_create_access: 'faculty_reg_faculty'
+    
+entity.faculty_reg_faculty.edit_form:
+  path: '/faculty_reg_faculty/{faculty_reg_faculty}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the student entity.
+    _entity_form: faculty_reg_faculty.edit
+    _title: 'EDIT FACULTY DETAILS'
+  requirements:
+    _entity_access: 'faculty_reg_faculty.edit'
+    
+entity.faculty_reg_faculty.delete_form:
+  path: '/faculty/{faculty_reg_faculty}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the student entity.
+    _entity_form: faculty_reg_faculty.delete
+    _title: 'DELETE STUDENT RECORD'
+  requirements:
+    _entity_access: 'faculty_reg_faculty.delete'
+    
+faculty_reg.faculty_settings:
+  path: 'admin/structure/faculty_reg_faculty_settings'
+  defaults:
+    _form: '\Drupal\faculty_reg\Form\facultySettingsForm'
+    _title: 'FACULTY SETTINGS'
+  requirements:
+    _permission: 'administer faculty entity'
+    

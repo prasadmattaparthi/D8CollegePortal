@@ -1,0 +1,5 @@
+name: Faculty Login Module
+description: login form for Faculty to add or edit or update student records.
+Package: Custom
+core: 8.x
+type: module

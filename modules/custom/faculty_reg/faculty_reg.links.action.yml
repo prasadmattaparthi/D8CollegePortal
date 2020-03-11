@@ -1,0 +1,11 @@
+# All action links for this module
+
+faculty_reg.faculty_add:
+  # Which route will be called by the link
+  route_name: faculty_reg.faculty_add
+  title: 'Faculty Registration Form'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.faculty_reg_faculty.collection
+    - entity.faculty_reg_faculty.canonical

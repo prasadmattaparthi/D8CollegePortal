@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'BlackStone'
+description: 'A Drupal Bootstrap 3 based sub-theme.'
+package: 'Bootstrap'
+
+regions:
+  header: 'Header'
+  logo: 'Logo'
+  navigation: 'Navigation'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  left_footersidebar: 'Left Footer'
+  middle_footersidebar: 'Middle Footer'
+  right_footersidebar: 'Right Footer'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - BlackStone/framework
+
+
+logo: Aicon2.png

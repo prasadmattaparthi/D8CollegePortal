@@ -1,0 +1,53 @@
+entity.student_entity_student.canonical:
+  path: '/student_entity_student/{student_entity_student}'
+  defaults:
+    _entity_view: 'student_entity_student'
+    _title: 'STUDENT DETAILS'
+  requirements:
+    _permission: 'access student entity' 
+ 
+entity.student_entity_student.collection:
+  path: '/student_entity_student/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 'student_entity_student'
+    _title: 'STUDENT RECORDS'
+  requirements:
+    _permission: 'access student entity' 
+
+student_entity.student_add:
+  path: '/student_entity_student/add'
+  defaults:
+  # Calls the form.add controller, defined in the student entity.
+    _entity_form: student_entity_student.add
+    _title: 'Add record'
+  requirements:
+    _permission: 'access student entity' 
+ 
+entity.student_entity_student.edit_form:
+  path: '/student_entity_student/{student_entity_student}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the student entity.
+    _entity_form: student_entity_student.edit
+    _title: 'EDIT STUDENT DETAILS'
+  requirements:
+    _permission: 'access student entity' 
+
+entity.student_entity_student.delete_form:
+  path: '/student/{student_entity_student}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the student entity.
+    _entity_form: student_entity_student.delete
+    _title: 'DELETE STUDENT RECORD'
+  requirements:
+    _permission: 'access student entity' 
+ 
+student_entity.student_settings:
+  path: 'admin/structure/student_entity_student_settings'
+  defaults:
+    _form: '\Drupal\student_entity\Form\studentSettingsForm'
+    _title: 'STUDENT SETTINGS'
+  requirements:
+    _permission: 'access student entity' 
+ 
+

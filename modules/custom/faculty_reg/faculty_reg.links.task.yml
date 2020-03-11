@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+faculty.settings_tab:
+  route_name: faculty_reg.faculty_settings
+  title: Settings
+  base_route: faculty_reg.faculty_settings
+
+faculty.view:
+  route_name: entity.faculty_reg_faculty.canonical
+  base_route: entity.faculty_reg_faculty.canonical
+  title: View
+
+faculty.page_edit:
+  route_name: entity.faculty_reg_faculty.edit_form
+  base_route: entity.faculty_reg_faculty.canonical
+  title: Edit
+
+faculty.delete_confirm:
+  route_name:  entity.faculty_reg_faculty.delete_form
+  base_route:  entity.faculty_reg_faculty.canonical
+  title: Delete
+  weight: 10

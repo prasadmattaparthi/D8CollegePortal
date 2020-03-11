@@ -1,0 +1,9 @@
+login.form:
+ path: '/loginform'
+ defaults:
+   _title: 'Student Login form'
+   _form: '\Drupal\login\Form\LoginForm'
+ requirements:
+   _permission: 'access content'
+   _role: 'student+administrator'
+    
